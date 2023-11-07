@@ -18,6 +18,8 @@
 
 ## Setup Custom Local Domain Name
 
+https://github.com/JesseSDevaney/embedding-metabase/assets/22608765/b0d7f986-348d-44d1-b1d2-03972f784403
+
 In order for cross-site embedding to work locally, we have to setup our localhost under a custom domain.
 
 ### Linux and MacOS
@@ -53,6 +55,8 @@ Now when you run apps locally, you have two links you can access them through: `
 Not tested on Windows but works in the same vain. `/etc/hosts` should be under `\Windows\System32\drivers\etc\hosts` instead.
 
 ## Setup Metabase and HTTPS
+
+https://github.com/JesseSDevaney/embedding-metabase/assets/22608765/6db651ab-700a-4355-bdf4-d89109968ab1
 
 ### Generate Java Keystore to Run Metabase as HTTPS
 
@@ -112,6 +116,8 @@ You'll need a Pro or Enterprise version of Metabase up and running use JWT SSO.
 
 ### Enable Interactive Embedding
 
+https://github.com/JesseSDevaney/embedding-metabase/assets/22608765/706feb06-226b-483d-9619-4953cc654a25
+
 1. Go to Admin Settings > Embedding
 2. Click Enable
 3. Go to Admin Settings > Embedding > Interactive Embedding
@@ -119,6 +125,8 @@ You'll need a Pro or Enterprise version of Metabase up and running use JWT SSO.
 5. (if using SSO) Set SameSite cookie to `none`
 
 ## Setup SSO
+
+https://github.com/JesseSDevaney/embedding-metabase/assets/22608765/4f225c54-b4a6-4e0f-98d2-3f366fbee310
 
 ### Enable SSO with JWT
 
@@ -135,6 +143,8 @@ In **JWT IDENTITY PROVIDER URI** field, paste `http://embedding.local:8081/login
 Click the **Generate key** button. Copy the key.
 
 ## Setup Embedding App
+
+https://github.com/JesseSDevaney/embedding-metabase/assets/22608765/6a588f6d-c79b-455d-8b74-c66c7c56781a
 
 ### Set environment variables
 
