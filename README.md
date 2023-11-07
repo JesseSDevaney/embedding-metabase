@@ -6,10 +6,10 @@
    - Linux and MacOS
    - Windows
 2. [Setup Metabase and HTTPS](#setup-metabase-and-https)
-   - Setup Metabase Pro/Enterprise Version
-   - Enable Interactive Embedding
    - Generate Java Keystore
    - Run Metabase with Environment Variables
+   - Setup Metabase Pro/Enterprise Version
+   - Enable Interactive Embedding
 3. [Setup SSO](#setup-sso)
    - Enable SSO with JWT
 4. [Setup Embedding App](#setup-embedding-app)
@@ -53,21 +53,6 @@ Now when you run apps locally, you have two links you can access them through: `
 Not tested on Windows but works in the same vain. `/etc/hosts` should be under `\Windows\System32\drivers\etc\hosts` instead.
 
 ## Setup Metabase and HTTPS
-
-### Setup Metabase Pro/Enterprise Version
-
-You'll need a Pro or Enterprise version of Metabase up and running use JWT SSO.
-
-1. Setup Metabase as Pro/Enterprise Version
-   - Add you license token in admin settings > license & billing
-
-### Enable Interactive Embedding
-
-1. Go to Admin Settings > Embedding
-2. Click Enable
-3. Go to Admin Settings > Embedding > Interactive Embedding
-4. For your embedding app, add to authorized origins: `http://embedding.local:8081`
-5. (if using SSO) Set SameSite cookie to `none`
 
 ### Generate Java Keystore to Run Metabase as HTTPS
 
@@ -117,6 +102,21 @@ yarn dev-ee
 ```
 
 Metabase should now be available at [https://localhost:8443](https://localhost:8443).
+
+### Setup Metabase Pro/Enterprise Version
+
+You'll need a Pro or Enterprise version of Metabase up and running use JWT SSO.
+
+1. Setup Metabase as Pro/Enterprise Version
+   - Add you license token in admin settings > license & billing
+
+### Enable Interactive Embedding
+
+1. Go to Admin Settings > Embedding
+2. Click Enable
+3. Go to Admin Settings > Embedding > Interactive Embedding
+4. For your embedding app, add to authorized origins: `http://embedding.local:8081`
+5. (if using SSO) Set SameSite cookie to `none`
 
 ## Setup SSO
 
